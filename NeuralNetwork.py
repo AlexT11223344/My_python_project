@@ -40,7 +40,7 @@ def train_test_split(features, lables, train_rate):
 
 train_data_feat, train_data_lab, test_data_feat, test_data_lab = train_test_split(Features, Labels, 0.8)
 
-'''定义sigmoid函数'''
+'''Define sigmoid function'''
 
 
 def sigmoid_fun(x):
@@ -48,7 +48,7 @@ def sigmoid_fun(x):
     return _x
 
 
-'''定义sigmoid函数的导数'''
+'''Define derivative'''
 
 
 def deriv_sigmoid(x):
@@ -56,7 +56,7 @@ def deriv_sigmoid(x):
     return f_x * (1 - f_x)
 
 
-'''定义损失函数loss function'''
+'''Define loss function'''
 
 
 def mse_loss(y_true, y_predict):
@@ -145,10 +145,6 @@ class NeuralNetwork:
 
 NN = NeuralNetwork()
 
-# h_1, h_2, ypred = NN.feedforward(train_data_feat[0], NN.l1_w, NN.l1_b, NN.l2_w, NN.l2_b, NN.l3_w, NN.l3_b)
-# print('这是h_1:\n{}'.format(h_1))
-# print('这是h_2:\n{}'.format(h_2))
-# print('输出:\n{}'.format(ypred))
 '''Change format'''
 train_data_lab = train_data_lab.reshape(len(train_data_lab), 1)
 print(train_data_feat)
