@@ -1,3 +1,13 @@
+'''
+Longest common sequence
+string_1: a b c d e f g h i j
+string_2: c d g i
+So the longest common sequence is: c d g i
+'''
+string_1 = ['a', 'b', 'd', 'a', 'c', 'e']
+string_2 = ['b', 'a', 'b', 'c', 'e']
+
+
 def LCSLength(X, Y, m, n, lookup):
     # return if the end of either string is reached
     if m == 0 or n == 0:
@@ -21,6 +31,7 @@ def LCSLength(X, Y, m, n, lookup):
 
     # return the subproblem solution from the dictionary
     return lookup[key]
+
 
 if __name__ == '__main__':
     X = 'ABCBDAB'

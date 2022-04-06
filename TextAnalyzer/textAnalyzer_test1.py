@@ -1,73 +1,104 @@
-"""
-Pyqt 5 tutorial/test
-Author : Xianming Tang
-Date: 03/21/2022
-"""
 import sys
-from PyQt5.QtWidgets import QMainWindow, QAction, QMenu, QApplication, qApp, QLabel,QHBoxLayout, QVBoxLayout,QPushButton, \
-    QLineEdit, QTextEdit, QGridLayout
+
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QAction, QApplication, QLabel, QMainWindow, QToolBar, QTextEdit, QGridLayout, QWidget,QFileDialog, QPlainTextEdit
 from PyQt5.QtGui import QIcon
 
 
-class Example(QMainWindow):
-
+class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.initUI()
+        self.setWindowTitle("Test_1")
 
-    def initUI(self):
+        '''<--------------------------------------------  Cutting line  -------------------------------------------->'''
+        '''Label area'''
+        # Generate labels
+
+        listOftext = QLabel('List of text', self)
+        listOftext.move(10, 20)
+        file = QLabel('Files:', self)
+        file.move(10, 35)
+        totalWords = QLabel('Total words:', self)
+        totalWords.move(10, 50)
+
+        '''<--------------------------------------------  Cutting line  -------------------------------------------->'''
+        '''Menu bar area'''
+        # Generate the Menu bar
+
         menubar = self.menuBar()
 
-        # create some new menus on the menu bar
+        # Sub class
         fileMenu = menubar.addMenu('File')
         modelsMenu = menubar.addMenu('Models')
         analysis = menubar.addMenu('Analysis')
         parameter = menubar.addMenu('Paramter setting')
 
-        # 1. file menu
-        # add 'import' sub menu, this menu still have a sub menu 'import txt'
-        sub_fileMenu = QAction('Import...',self)
-        fileMenu.addAction(sub_fileMenu)
+        '''<--------------------------------------------  Cutting line  -------------------------------------------->'''
 
-        # space
+        # 1. File
+        open_file = QAction('Open File', self)
+        exit = QAction('Exit', self)
+
+        fileMenu.addAction(open_file)
         fileMenu.addSeparator()
-        fileMenu.addAction(QAction('Exit', self))
+        fileMenu.addAction(exit)
 
-        # 2. models menu
-        sub_models_TFIDF = QAction('TF-RDF model', self)
-        sub_models_EM = QAction('EM model', self)
-        modelsMenu.addAction(sub_models_TFIDF)
-        modelsMenu.addAction(sub_models_EM)
+        open_file.triggered.connect(self.open_file_function)
+        exit.triggered.connect(self.exit_function)
 
-        # 3. analysis menu
-        analysis.addAction(QAction('Analysis', self))
+        '''Tool bar area'''
+        # toolbar = QToolBar("My main toolbar")
+        # self.addToolBar(toolbar)
+        # # 1. File button
+        # button_action = QAction("File", self)
+        # button_action.setStatusTip("This is your button")
+        # button_action.triggered.connect(self.drop_down_list)
+        # toolbar.addAction(button_action)
 
-        # 4. Parameter setting
-        sub_para_TDIDF = QAction('TF-IDF',self)
-        sub_para_EM = QAction('EM', self)
-        parameter.addAction(sub_para_TDIDF)
-        parameter.addAction(sub_para_EM)
+        '''Layout'''
+        self.main_widget = QWidget()  # Create main part
+        self.main_layout = QGridLayout()
+        self.main_widget.setLayout(self.main_layout)
 
-        # 4. Some information
-        listOftext = QLabel('List of text',self)
-        listOftext.move(10,20)
-        file = QLabel('Files:',self)
-        file.move(10,35)
-        totalWords = QLabel('Total words:',self)
-        totalWords.move(10,50)
+        self.left_widget = QWidget()  # Create left widget
+        self.left_widget.setObjectName('left_widget')
+        self.left_layout = QGridLayout()
+        self.left_widget.setLayout(self.left_layout)
 
-        self.setGeometry(300, 300, 800, 500)
+        self.right_widget = QWidget()  # Create right widget
+        self.right_widget.setObjectName('right_widget')
+        self.right_layout = QGridLayout()
+        self.right_widget.setLayout(self.right_layout)
+
+        self.main_layout.addWidget(self.left_widget, 0, 0, 12, 2)
+        self.main_layout.addWidget(self.right_widget, 0, 2, 12, 10)
+        self.setCentralWidget(self.main_widget)
+
+        self.textEdit = QPlainTextEdit()
+        self.right_layout.addWidget(self.textEdit, 0, 0, 4, 8)
+
+        self.setGeometry(300, 300, 1200, 700)
         self.setWindowIcon(QIcon('icon.png'))
         self.setWindowTitle('Text Analyzer')
-        self.show()
 
+    def open_file_function(self):
+        # fname = QFileDialog.getOpenFileName(self, 'Open file', '.')
+        filename = QFileDialog.getOpenFileName(self, "Open file", ".")
+        path = filename[0]
+        with open(path,"r") as f:
+            data = f.read()
+            self.textEdit.setPlainText(data)
+
+
+    def exit_function(self):
+        print("Exit")
 
 def main():
     app = QApplication(sys.argv)
-    ex = Example()
+    window = MainWindow()
+    window.show()
     sys.exit(app.exec_())
-
 
 if __name__ == '__main__':
     main()
