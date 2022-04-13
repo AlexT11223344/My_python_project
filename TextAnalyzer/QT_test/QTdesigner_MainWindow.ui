@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1123</width>
-    <height>780</height>
+    <height>779</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -58,7 +58,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -118,18 +118,8 @@
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>KWIC</string>
      </attribute>
-     <widget class="QTextBrowser" name="textBrowser_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>931</width>
-        <height>641</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
@@ -186,6 +176,25 @@
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QTableWidget" name="table_KWIC">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>931</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>100</number>
+      </attribute>
      </widget>
     </widget>
    </widget>
@@ -257,13 +266,12 @@
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
+   <zorder>splitter</zorder>
+   <zorder>splitter_2</zorder>
    <zorder>frame</zorder>
    <zorder>frame_2</zorder>
    <zorder>tabWidget</zorder>
    <zorder>targetCorpus</zorder>
-   <zorder>checkBox_regex</zorder>
-   <zorder>checkBox_case</zorder>
-   <zorder>checkBox_word</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
