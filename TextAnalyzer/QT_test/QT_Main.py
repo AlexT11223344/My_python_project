@@ -25,25 +25,62 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.actionOpen_File.triggered.connect(self.open_file)
         self.actionExit.triggered.connect(self.exit)
         self.listWidget.itemDoubleClicked.connect(self.list_widget_double_click)
+        self.Qslider_sense.valueChanged.connect(self.Qslider_operation)
+        self.Qslider_sense.valueChanged.connect(self.fuzzyMatch_lineEditor_receiveData)
+        self.lineEdit_FuzzyMatch.editingFinished.connect(self.fuzzyMatch_lineEditor_sendData)
 
         '''<---------------------------  UI  --------------------------->'''
         self.setWindowTitle("Text Analyzer")
         self.setWindowIcon(QIcon("icon.png"))
-        # set KWIC UI
-        self.table_KWIC.setColumnCount(4)
-        self.table_KWIC.setHorizontalHeaderLabels(["File Name", "Left Context", "Hit", "Right context"])
-        # self.table_KWIC.setColumnWidth(0, 50)
-        self.table_KWIC.setColumnWidth(0, 200)
-        self.table_KWIC.setColumnWidth(1, 350)
-        self.table_KWIC.setColumnWidth(2, 100)
-        self.table_KWIC.setColumnWidth(3, 350)
+        # Table KWIC
+        self.table_KWIC.setColumnCount(5)
+        self.table_KWIC.setHorizontalHeaderLabels(["File Name", "RowCount", "Left Context", "Hit", "Right context"])
+        self.table_KWIC.setColumnWidth(0, 300)
+        self.table_KWIC.setColumnWidth(1, 100)
+        self.table_KWIC.setColumnWidth(2, 350)
+        self.table_KWIC.setColumnWidth(3, 100)
+        self.table_KWIC.setColumnWidth(4, 350)
+
+        # Qslider
+        self.Qslider_sense.setMinimum(0)
+        self.Qslider_sense.setMaximum(100)
+        self.Qslider_sense.setSingleStep(1)
+        self.Qslider_sense.setValue(70)
+        _layout = self.makeContent(self.Qslider_sense)
+        self.setLayout(_layout)
+
+    '''
+    *****************************************************************************************************************************************
+    *****************************************************************************************************************************************
+    *****************************************************************************************************************************************
+    *****************************************************************************************************************************************
+    *****************************************************************************************************************************************
+    *****************************************************************************************************************************************
+    '''
+
+    '''<---------------------------  Menu Bar  --------------------------->'''
+
+    # 1. open_file
+    def open_file(self):
+        file_path, ext = QtWidgets.QFileDialog.getOpenFileName()
+        # pending : valid the txt documents
+        if file_path:
+            self.file_name = Path(file_path).name
+            self.file_path_dic.update({self.file_name: file_path})
+            self.listWidget.addItem(self.file_name)
+
+    # 2. close
+    def exit(self):
+        self.file_path_dic.clear()
+        self.close()
+
 
     def search_input_1(self):
         self.query_1 = self.input_1.text()
         # QtWidgets.QMessageBox.about(self, "Please load txt file first")
         if not self.query_1:
             QtWidgets.QMessageBox.about(self, "No key words", "Please enter your key word.")
-        if self.textBrowser_1.find(self.query_1):
+        elif self.textBrowser_1.find(self.query_1):
             palette = self.textBrowser_1.palette()
             # palette.setColor(QPalette.Highlight, palette.color(QPalette.Active, QPalette.Highlight))
             palette.setColor(QPalette.Highlight, QColor(64, 224, 205))
@@ -56,42 +93,42 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.query_2 = self.input_2.text()
         if not self.query_2:
             QtWidgets.QMessageBox.about(self, "No key words", "Please enter your key word.")
-        file_name_list, leftContext, hit, rightContext = keyword_l_r(self.file_read, self.item_text,
-                                                                              self.query_2, 8)
-        # self.textBrowser_1.setText(''.join(id_list[0:len(id_list)]))
-        self.table_KWIC.clearContents()
-        self.table_KWIC.setRowCount(len(file_name_list))
+        else:
+            file_name_list, row_Count_list, leftContext, hit, rightContext = keyword_l_r(self.file_read, self.item_text,
+                                                                                     self.query_2, 10, self.senseValue)
 
-        for i in range(0, len(file_name_list)):
-            # add id to column_1
-            # id_Item = QTableWidgetItem(id_list[i])
-            # self.table_KWIC.setItem(i, 0, id_Item)
+            # self.textBrowser_1.setText(''.join(rightContext[0:len(rightContext)]))
+            self.table_KWIC.clearContents()
+            self.table_KWIC.setRowCount(len(file_name_list))
 
-            # add file_name to column_2
-            fileName_Item = QTableWidgetItem(file_name_list[i])
-            self.table_KWIC.setItem(i, 0, fileName_Item)
+            for i in range(0, len(file_name_list)):
+                # add id to column_1
+                # id_Item = QTableWidgetItem(id_list[i])
+                # self.table_KWIC.setItem(i, 0, id_Item)
 
-            # add leftContext to column_3
-            leftContext_Item = QTableWidgetItem(leftContext[i])
-            self.table_KWIC.setItem(i, 1, leftContext_Item)
+                # add file_name to column_1
+                fileName_Item = QTableWidgetItem(file_name_list[i])
+                self.table_KWIC.setItem(i, 0, fileName_Item)
 
-            # add hit to column_4
-            hit_Item = QTableWidgetItem(hit[i])
-            self.table_KWIC.setItem(i, 2, hit_Item)
+                # add row_count to column_2
+                rowCount_Item = QTableWidgetItem(row_Count_list[i])
+                self.table_KWIC.setItem(i, 1, rowCount_Item)
 
-            # add rightContext to column_5
-            lrightContext_Item = QTableWidgetItem(rightContext[i])
-            self.table_KWIC.setItem(i, 3, lrightContext_Item)
-        layout = self.makeContent(self.table_KWIC)
-        self.setLayout(layout)
+                # add leftContext to column_3
+                leftContext_Item = QTableWidgetItem(leftContext[i])
+                self.table_KWIC.setItem(i, 2, leftContext_Item)
 
-    def open_file(self):
-        file_path, ext = QtWidgets.QFileDialog.getOpenFileName()
-        # pending : valid the txt documents
-        if file_path:
-            self.file_name = Path(file_path).name
-            self.file_path_dic.update({self.file_name: file_path})
-            self.listWidget.addItem(self.file_name)
+                # add hit to column_4
+                hit_Item = QTableWidgetItem(hit[i])
+                self.table_KWIC.setItem(i, 3, hit_Item)
+
+                # add rightContext to column_5
+                lrightContext_Item = QTableWidgetItem(rightContext[i])
+                self.table_KWIC.setItem(i, 4, lrightContext_Item)
+
+            _layout = self.makeContent(self.table_KWIC)
+            self.setLayout(_layout)
+            self.label_QueryResult_2.setText(str(len(row_Count_list)))
 
     def list_widget_double_click(self, item):
         # self.textBrowser_1.setText(self.file_path_dic[item.text()])
@@ -104,14 +141,27 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             #     self.textBrowser_1.setText(i)
             self.textBrowser_1.setText(self.file_read)
 
+    def Qslider_operation(self):
+        print('current slider value=%s' % self.Qslider_sense.value())
+        self.senseValue = self.Qslider_sense.value()
+
+    def fuzzyMatch_lineEditor_receiveData(self):
+        self.lineEdit_FuzzyMatch.setText(str(self.senseValue))
+
+    def fuzzyMatch_lineEditor_sendData(self):
+        self.check = self.lineEdit_FuzzyMatch.text()
+        self.check = int(self.check)
+        if isinstance(self.check, int) == True and 0 <= self.check <= 100:
+            self.senseValue = self.check
+            self.Qslider_sense.setValue(self.check)
+        else:
+            pass
+
+
     def makeContent(self, template):
         layout = QVBoxLayout()
         layout.addWidget(template)
         return layout
-
-    def exit(self):
-        self.file_path_dic.clear()
-        self.close()
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ def TXTRead_Writeline(BookList):
             with open(path + r'\{}_Rows.txt'.format(BookList[i]), 'a+') as f_1:
                 _n = 0
                 for content in lines:
-                    f_1.write(str(_n + 1) + '.' + " " + content)
+                    f_1.write(str(_n + 1) + ':' + " " + content)
                     print(content)
                     _n = _n + 1
                     # content = str(i) + "." + "  " + content
