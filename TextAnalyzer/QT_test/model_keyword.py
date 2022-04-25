@@ -5,12 +5,14 @@ import numpy as np
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
-# path = os.getcwd()
-#
+path = os.getcwd()
+
 # with open(path + r'\Brother Jacob(1864)_test_Rows.txt', 'r') as f:
 #     file_Adam = f.read()
 #
 # keyword_1 = "Brother"
+# print(file_Adam.split())
+# print(file_Adam.splitlines())
 
 ################################################################################################
 ################################################################################################
@@ -38,11 +40,12 @@ def order_Change(Keyword_Sorted, Index_list, Sub_Array_To_Be_Sorted):
     return _new_sorted_list
 
 
-def keyword_l_r(file, File_name, keyword, n, fuzzy_sensitive):
+def keyword_l_r(file, File_name, keyword, Left_n, Right_n, fuzzy_sensitive):
     # file must be use "Open" as f and f.read function to get the result with only "r" module
     _file_to_list = file.split()
     # np_file = np.array(_file_to_list)
-    _n = n
+    _left_n = Left_n
+    _right_n = Right_n
     _fuzzSen = fuzzy_sensitive
 
     '''
@@ -84,15 +87,15 @@ def keyword_l_r(file, File_name, keyword, n, fuzzy_sensitive):
                     continue
 
             '''3. add left/right context list'''
-            if i - _n < 0:
+            if i - _left_n < 0:
                 _leftContext.append(_file_to_list[0: i])
             else:
-                _leftContext.append(_file_to_list[i - _n: i])
+                _leftContext.append(_file_to_list[i - _left_n: i])
 
-            if i + _n > len(_file_to_list):
+            if i + _right_n > len(_file_to_list):
                 _rightContext.append(_file_to_list[i + 1: len(_file_to_list)])
             else:
-                _rightContext.append(_file_to_list[i + 1: i + _n + 1])
+                _rightContext.append(_file_to_list[i + 1: i + _right_n + 1])
         else:
             continue
     '''4. add id list'''
@@ -117,6 +120,11 @@ def keyword_l_r(file, File_name, keyword, n, fuzzy_sensitive):
 
     return _fileName_list, _rows_sorted, _leftContext_sorted, _Hit_sorted, _rightContext_sorted
 
+def key_word_search(fileInLines, keyword):
+    print(len(fileInLines))
+    for content in fileInLines:
+        if keyword in content:
+            return content
 
 
 # a, b, c, d, e = keyword_l_r(file_Adam, 'Adam Bede(1859)_test.txt', keyword_1, 8, 75)
