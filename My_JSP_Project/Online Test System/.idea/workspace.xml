@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1a92cde1-99eb-4c07-8f65-590bbaa0e800" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/.idea/GE_project_TextAnalyzer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/GE_BootStrap_test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/css/text_area.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Adam Bede(1859).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Brother Jacob(1864).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Daniel Deronda(1876).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Felix Holt, the Radical(1866).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Impressions of Theophrastus Such (1879).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Middlemarch(1871-72).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Novel_list.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Romola(1863).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Scenes of Clerical Life(1858).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/Silas Marner(1861).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/The Lifted Veil(1859).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/data/The Mill on the Floss(1860).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/csv_reader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/file_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_project_TextAnalyzer/js/test_js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GE_py_script/.idea/GE_py_script.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Music_Store/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Music_Store/MusicStore/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../photograph_index/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../My_python_project" beforeDir="false" afterPath="$PROJECT_DIR$/../../My_python_project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python-project" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2B2RMLGaLIvBbFWdntHu80WtrI7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Tool/java_JSP/final_project" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a92cde1-99eb-4c07-8f65-590bbaa0e800" name="Changes" comment="" />
+      <created>1656102144005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656102144005</updated>
+      <workItem from="1656102145535" duration="193000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

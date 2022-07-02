@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+
+    <!--  1. Core CSS of Bootstrap  -->
+    <link href="GE_project_TextAnalyzer/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <!--  2. Jquery document  -->
+    <script src="GE_project_TextAnalyzer/js/jquery.js" type="text/javascript" charset="UTF-8"></script>
+    <!--  3. Core JS of Bootstrap  -->
+    <script src="GE_project_TextAnalyzer/js/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
+    <!--  4. D3 package  -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!--  5. Other JS documents  -->
+    <script type="text/javascript" src="js/test_js.js"></script>
+    <script type="text/javascript" src="js/file_info.js"></script>
+
+</head>
+<body>
+    <h1>Test page for George Eliot Archive project</h1>
+    <br>
+    <br>
+    <br>
+    <select id="select_novel_list" onchange="file_info()">
+        <option value="">Novel Selection...</option>
+        <option value="Adam Bede(1859).txt">Adam Bede(1859)</option>
+        <option value="Brother Jacob(1864).txt">Brother Jacob(1864)</option>
+        <option value="Daniel Deronda(1876).txt">Daniel Deronda(1876)</option>
+        <option value="Felix Holt, the Radical(1866).txt">Felix Holt, the Radical(1866)</option>
+        <option value="Impressions of Theophrastus Such (1879).txt">Impressions of Theophrastus Such (1879)</option>
+        <option value="Middlemarch(1871-72).txt">Middlemarch(1871-72)</option>
+        <option value="Romola(1863).txt">Romola(1863)</option>
+        <option value="Scenes of Clerical Life(1858).txt">Scenes of Clerical Life(1858)</option>
+        <option value="Silas Marner(1861).txt">Silas Marner(1861)</option>
+        <option value="The Lifted Veil(1859).txt">The Lifted Veil(1859)</option>
+        <option value="The Mill on the Floss(1860).txt">The Mill on the Floss(1860)</option>
+    </select>
+    <br>
+    <br>
+    <p id ="p_novel_file_name"></p>
+    <p id="p_novel_name"></p>
+    <p id="p_total_text_lines"></p>
+    <p id="p_total_word_count"></p>
+    <p id="p_query_results"></p>
+    <br>
+    <br>
+    <tr>
+        <td>Select a txt file:</td>
+        <br>
+        <td><input type="file" id="input_file" onchange="file_info()"></td>
+    </tr>
+    <br>
+    <br>
+    <textarea id="novel_content" rows="50" cols="200"></textarea>
+
+</body>
+</html>
