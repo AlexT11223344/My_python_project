@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="" />
+    <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="Newest file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,7 +226,16 @@
       <workItem from="1652987565566" duration="2637000" />
       <workItem from="1653425670725" duration="95000" />
       <workItem from="1657477497704" duration="681000" />
+      <workItem from="1657478198840" duration="334000" />
     </task>
+    <task id="LOCAL-00001" summary="Newest file">
+      <created>1657478412643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657478412643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,8 +251,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Newest file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Newest file" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
