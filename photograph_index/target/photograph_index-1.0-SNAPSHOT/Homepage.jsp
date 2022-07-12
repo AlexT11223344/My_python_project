@@ -20,6 +20,8 @@
 
 </form>
 
+<div>Input keyword is : ${Keyword}</div>
+
 <form name="DBinfo" action="DbInfoServlet" method="get">
     <h2>Test connection to the DB and get infomation from it</h2>
     <input type="submit" value="Test">
