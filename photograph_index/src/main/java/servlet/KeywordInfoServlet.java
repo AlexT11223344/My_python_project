@@ -10,8 +10,9 @@ public class KeywordInfoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String keyword = request.getParameter("keyword");
-        request.getSession().setAttribute("Keyword", keyword);
-        request.getRequestDispatcher("Homepage.jsp").forward(request,response);
+        System.out.println(keyword);
+
+
     }
 
     @Override

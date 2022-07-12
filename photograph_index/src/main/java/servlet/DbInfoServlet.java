@@ -18,30 +18,12 @@ public class DbInfoServlet extends HttpServlet {
         try{
             List<String> keywords = mySQLdb.fetchKeywords();
             request.getSession().setAttribute("Keywords", keywords);
-
-            List<String> diskNum = mySQLdb.fetchDiskNum();
-            request.getSession().setAttribute("DiskNum",diskNum);
-
-            List<String> slideNum = mySQLdb.fetchSlideNum();
-            request.getSession().setAttribute("SlideNum",slideNum);
-
-            List<String> location = mySQLdb.fetchLocation();
-            request.getSession().setAttribute("Location",location);
-
-            List<String> year = mySQLdb.fetchYear();
-            request.getSession().setAttribute("Year",year);
-
-            List<String> photographer = mySQLdb.fetchPhotographer();
-            request.getSession().setAttribute("Photographer",photographer);
-
-            List<String> fileName = mySQLdb.fetchFileName();
-            request.getSession().setAttribute("FileName", fileName);
         }
         catch (SQLException e){
             e.printStackTrace();
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/test.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("test.jsp");
         dispatcher.forward(request, response);
     }
 

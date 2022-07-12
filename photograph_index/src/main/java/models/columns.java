@@ -1,15 +1,15 @@
 package models;
 
 public class columns {
-    String disk_number;
-    String slide_number;
+    Integer disk_number;
+    Integer slide_number;
     String keywords;
     String location;
     String year;
     String photographer;
     String file_name;
 
-    public columns(String disk_number, String slide_number, String keywords, String location, String year, String photographer, String file_name) {
+    public columns(Integer disk_number, Integer slide_number, String keywords, String location, String year, String photographer, String file_name) {
         this.disk_number = disk_number;
         this.slide_number = slide_number;
         this.keywords = keywords;
@@ -19,19 +19,19 @@ public class columns {
         this.file_name = file_name;
     }
 
-    public String getDisk_number() {
+    public Integer getDisk_number() {
         return disk_number;
     }
 
-    public void setDisk_number(String disk_number) {
+    public void setDisk_number(Integer disk_number) {
         this.disk_number = disk_number;
     }
 
-    public String getSlide_number() {
+    public Integer getSlide_number() {
         return slide_number;
     }
 
-    public void setSlide_number(String slide_number) {
+    public void setSlide_number(Integer slide_number) {
         this.slide_number = slide_number;
     }
 
