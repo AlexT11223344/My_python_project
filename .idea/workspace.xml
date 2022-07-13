@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="Newest file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="change pytorch">
       <change beforePath="$PROJECT_DIR$/Pytorch/practice_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pytorch/practice_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -261,6 +260,7 @@
       <workItem from="1657477497704" duration="681000" />
       <workItem from="1657478198840" duration="4023000" />
       <workItem from="1657555900920" duration="92000" />
+      <workItem from="1657654785614" duration="709000" />
     </task>
     <task id="LOCAL-00001" summary="Newest file">
       <created>1657478412643</created>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657478575632</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change pytorch">
+      <created>1657654875802</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657654875802</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +303,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Newest file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Newest file" />
+    <MESSAGE value="change pytorch" />
+    <option name="LAST_COMMIT_MESSAGE" value="change pytorch" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
