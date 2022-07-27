@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="submit newest code of leetcode">
-      <change afterPath="$PROJECT_DIR$/LeetCode/Easy/28. Implement strStr().py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/Easy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Easy/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WriteRow_tool/RowsWriter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +46,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/LeetCode/Easy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WriteRow_tool" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.28. Implement strStr()">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\My_python_project\WriteRow_tool" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.RowsWriter">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="My_python_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,6 +154,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="RowsWriter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WriteRow_tool" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WriteRow_tool/RowsWriter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="My_python_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,28 +190,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="practice_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pytorch" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pytorch/practice_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,11 +315,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.RowsWriter" />
         <item itemvalue="Python.28. Implement strStr()" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.7.Remove duplicated value from sorted array" />
         <item itemvalue="Python.6.Merge_2_sorted_list" />
-        <item itemvalue="Python.practice_1" />
       </list>
     </recent_temporary>
   </component>
@@ -340,6 +343,7 @@
       <workItem from="1658611789068" duration="276000" />
       <workItem from="1658612389988" duration="802000" />
       <workItem from="1658778865475" duration="2825000" />
+      <workItem from="1658886342810" duration="123000" />
     </task>
     <task id="LOCAL-00001" summary="Newest file">
       <created>1657478412643</created>
@@ -426,10 +430,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/My_python_project$7_Remove_duplicated_value_from_sorted_array.coverage" NAME="7.Remove duplicated value from sorted array Coverage Results" MODIFIED="1658779121339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/My_python_project$RowsWriter.coverage" NAME="RowsWriter Coverage Results" MODIFIED="1658886465606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WriteRow_tool" />
     <SUITE FILE_PATH="coverage/My_python_project$QT_Main.coverage" NAME="QT_Main Coverage Results" MODIFIED="1652990152897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TextAnalyzer/QT_test" />
     <SUITE FILE_PATH="coverage/My_python_project$practice_1.coverage" NAME="practice_1 Coverage Results" MODIFIED="1657481599341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pytorch" />
     <SUITE FILE_PATH="coverage/My_python_project$6_Merge_2_sorted_list.coverage" NAME="6.Merge_2_sorted_list Coverage Results" MODIFIED="1658603826569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
-    <SUITE FILE_PATH="coverage/My_python_project$28__Implement_strStr__.coverage" NAME="28. Implement strStr() Coverage Results" MODIFIED="1658785869184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/My_python_project$28__Implement_strStr__.coverage" NAME="28. Implement strStr() Coverage Results" MODIFIED="1658886434899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
     <SUITE FILE_PATH="coverage/My_python_project$test.coverage" NAME="test Coverage Results" MODIFIED="1658785191022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
   </component>
 </project>
