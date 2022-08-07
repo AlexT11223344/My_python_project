@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="submit newest code of rows writer">
-      <change afterPath="$PROJECT_DIR$/LeetCode/Easy/70. Climbing Stairs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Easy/83. Remove Duplicates from Sorted List.py" afterDir="false" />
+    <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="submit newest code of leetcode">
+      <change afterPath="$PROJECT_DIR$/DataStructures/Stack_practice_1. Balance Parentheses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Easy/94. Binary Tree Inorder Traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/Easy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Easy/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/Stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/Stack.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,15 +50,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WriteRow_tool" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DataStructures" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\My_python_project\WriteRow_tool" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.RowsWriter">
+  <component name="RunManager" selected="Python.Stack_practice_1. Balance Parentheses">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="My_python_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,50 +114,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="6.Merge_2_sorted_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/Easy" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/Easy/6.Merge_2_sorted_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="7.Remove duplicated value from sorted array" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/Easy" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/Easy/7.Remove duplicated value from sorted array.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="RowsWriter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,6 +128,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WriteRow_tool/RowsWriter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Stack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructures" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructures/Stack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Stack_practice_1. Balance Parentheses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructures" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructures/Stack_practice_1. Balance Parentheses.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -318,11 +319,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Stack_practice_1. Balance Parentheses" />
+        <item itemvalue="Python.Stack" />
         <item itemvalue="Python.RowsWriter" />
         <item itemvalue="Python.28. Implement strStr()" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.7.Remove duplicated value from sorted array" />
-        <item itemvalue="Python.6.Merge_2_sorted_list" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +348,8 @@
       <workItem from="1658612389988" duration="802000" />
       <workItem from="1658778865475" duration="2825000" />
       <workItem from="1658886342810" duration="1055000" />
-      <workItem from="1658943980034" duration="4916000" />
+      <workItem from="1658943980034" duration="5402000" />
+      <workItem from="1659809382682" duration="7845000" />
     </task>
     <task id="LOCAL-00001" summary="Newest file">
       <created>1657478412643</created>
@@ -398,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658886631937</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="submit newest code of leetcode">
+      <created>1658974716420</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658974716420</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,34 +428,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Newest file" />
     <MESSAGE value="change pytorch" />
-    <MESSAGE value="submit newest code of leetcode" />
     <MESSAGE value="submit newest code of rows writer" />
-    <option name="LAST_COMMIT_MESSAGE" value="submit newest code of rows writer" />
+    <MESSAGE value="submit newest code of leetcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="submit newest code of leetcode" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/LeetCode/Easy/28. Implement strStr().py</url>
-          <line>12</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/LeetCode/Easy/28. Implement strStr().py</url>
-          <line>17</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/My_python_project$7_Remove_duplicated_value_from_sorted_array.coverage" NAME="7.Remove duplicated value from sorted array Coverage Results" MODIFIED="1658779121339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
     <SUITE FILE_PATH="coverage/My_python_project$RowsWriter.coverage" NAME="RowsWriter Coverage Results" MODIFIED="1658886494738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WriteRow_tool" />
     <SUITE FILE_PATH="coverage/My_python_project$QT_Main.coverage" NAME="QT_Main Coverage Results" MODIFIED="1652990152897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TextAnalyzer/QT_test" />
+    <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_1__Balance_Parentheses.coverage" NAME="Stack_practice_1. Balance Parentheses Coverage Results" MODIFIED="1659826588529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures" />
     <SUITE FILE_PATH="coverage/My_python_project$practice_1.coverage" NAME="practice_1 Coverage Results" MODIFIED="1657481599341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pytorch" />
     <SUITE FILE_PATH="coverage/My_python_project$6_Merge_2_sorted_list.coverage" NAME="6.Merge_2_sorted_list Coverage Results" MODIFIED="1658603826569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
     <SUITE FILE_PATH="coverage/My_python_project$28__Implement_strStr__.coverage" NAME="28. Implement strStr() Coverage Results" MODIFIED="1658886434899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/My_python_project$Stack.coverage" NAME="Stack Coverage Results" MODIFIED="1659825834328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures" />
     <SUITE FILE_PATH="coverage/My_python_project$test.coverage" NAME="test Coverage Results" MODIFIED="1658785191022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
   </component>
 </project>
