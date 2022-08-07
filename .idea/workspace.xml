@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="submit newest code of leetcode">
-      <change afterPath="$PROJECT_DIR$/DataStructures/Stack_practice_1. Balance Parentheses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Easy/94. Binary Tree Inorder Traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataStructures/Stack_practice_1. Balance Parentheses_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/Stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/Stack.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +346,7 @@
       <workItem from="1658778865475" duration="2825000" />
       <workItem from="1658886342810" duration="1055000" />
       <workItem from="1658943980034" duration="5402000" />
-      <workItem from="1659809382682" duration="7845000" />
+      <workItem from="1659809382682" duration="9588000" />
     </task>
     <task id="LOCAL-00001" summary="Newest file">
       <created>1657478412643</created>
@@ -407,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658974716420</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="submit newest code of leetcode">
+      <created>1659834911830</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659834911830</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
