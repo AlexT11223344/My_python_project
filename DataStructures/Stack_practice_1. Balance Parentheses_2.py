@@ -28,12 +28,11 @@ def par_checker(par_string):
     else:
         return False
 
+
 def match(open, close):
     opens = "([{"
     closes = ")]}"
     return opens.index(open) == closes.index(close)
-
-
 
 
 print(par_checker("(({([])}))"))
