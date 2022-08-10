@@ -1,28 +1,35 @@
 class Solution(object):
     def isValid(self, s):
-        list_str = list(s)
-        dic_element = {'(':1, ")":-1, "[":2, "]":-2, "{":3, "}":-3}
-        if len(list_str)%2 != 0 or dic_element[list_str[len(list_str)]] > 0 or dic_element[list_str[0]] < 0:
-            return False
-        else:
-            count_pos = 0
-            count_neg = 0
-            for i in range(0, len(list_str)):
-                if list_str[i] > 0:
-                    count_pos += 1
-                else:
-                    count_neg += 1
-            if count_pos != count_neg:
-                return False
+        """
+        :type s: str
+        :rtype: bool
+        """
+        stack = []
+        balanced = True
+        index = 0
+        while index < len(s) and balanced:
+            par = s[index]
+            if par in "([{":
+                stack.append(par)
             else:
+                if len(stack) == 0:
+                    balanced = False
+                else:
+                    top = stack.pop()
+                    if not Solution.match(self, top, par):
+                        return False
+            index += 1
+        if balanced and len(stack) == 0:
+            return True
+        else:
+            return False
+    def match(self, open, close):
+        opens = "([{"
+        closes = ")]}"
+        return opens.index(open) == closes.index(close)
 
-
-
-
-
-        return
-"""
+""" 
 case: ((({{]],  (){}[],  {[()]}, 
 """
 sol = Solution()
-print(sol.isValid("({})"))
+print(sol.isValid("((({{]]"))
