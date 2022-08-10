@@ -1,10 +1,21 @@
-import unittest
+"""
+Given a integer, convert it to the binary number
+8-> 1000, 9-> 1001
+"""
+import math
 
+from Stack import *
+stack = Stack()
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+def convert(x, divide_num):
+    while x > 0:
+        binary = x % divide_num
+        stack.push(binary)
+        x = x // divide_num
+    bin_str = ""
+    while not stack.is_empty():
+        bin_str = bin_str + str(stack.pop())
+    return bin_str
 
+print(convert(100, 16))
 
-if __name__ == '__main__':
-    unittest.main()
