@@ -1,2 +1,8 @@
-dic_element = {'(':1, ")":-1, "[":2, "]":-2, "{":3, "}":-3}
-print(dic_element[")"])
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+a = 9
+b = 9 // 2
+print(b)

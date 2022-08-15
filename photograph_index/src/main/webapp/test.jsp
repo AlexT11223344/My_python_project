@@ -14,7 +14,8 @@
     <title>Test page</title>
 </head>
 <body>
-    <c:forEach items="${Keywords}" var="keywords" varStatus="i">
+    <p>*********************************************************</p>
+    <c:forEach items="${FileName}" var="keywords" varStatus="i">
         <li>${i.index + 1}. ${keywords}</li>
     </c:forEach>
 </body>

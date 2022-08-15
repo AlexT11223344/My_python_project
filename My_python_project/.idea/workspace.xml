@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="change pytorch">
-      <change beforePath="$PROJECT_DIR$/Pytorch/practice_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pytorch/practice_1.py" afterDir="false" />
+    <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="submit newest code of leetcode">
+      <change afterPath="$PROJECT_DIR$/DataStructures/Queue/Queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/Stack/Stack_practice_2. Converting decimal numbers to binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/Stack/Stack_practice_2. Converting decimal numbers to binary.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +14,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Unit Test" />
         <option value="Python Script" />
       </list>
     </option>
@@ -34,6 +37,9 @@
     <option name="defaultAccountId" value="a6f80596-79b6-4dd4-a9b7-9d72a6fe9440" />
   </component>
   <component name="ProjectId" id="28IopU1YUcaDxwh63lHWIeEYb7z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,11 +47,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Tool/PythonProject/WebCrawler/crawler/Alabama_Authors" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DataStructures" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.practice_1">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\My_python_project\WriteRow_tool" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\My_python_project\DataStructures\Stack" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Stack_practice_2. Converting decimal numbers to binary">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="My_python_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,20 +94,86 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QT_Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="My_python_project" />
+    <configuration name="5.Valid Parentheses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/Easy" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/Easy/5.Valid Parentheses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Stack_practice_1. Balance Parentheses_2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TextAnalyzer/QT_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructures/Stack" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TextAnalyzer/QT_test/QT_Main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructures/Stack/Stack_practice_1. Balance Parentheses_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Stack_practice_1. Balance Parentheses_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructures" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\GitHub\My_python_project\DataStructures\Stack\Stack_practice_1. Balance Parentheses_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Stack_practice_2. Converting decimal numbers to binary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructures/Stack" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructures/Stack/Stack_practice_2. Converting decimal numbers to binary.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +204,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,12 +212,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pytorch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode/Easy" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pytorch/practice_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/Easy/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,8 +321,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.practice_1" />
-        <item itemvalue="Python.QT_Main" />
+        <item itemvalue="Python.Stack_practice_2. Converting decimal numbers to binary" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Stack_practice_1. Balance Parentheses_2 (1)" />
+        <item itemvalue="Python.5.Valid Parentheses" />
+        <item itemvalue="Python.Stack_practice_1. Balance Parentheses_2" />
       </list>
     </recent_temporary>
   </component>
@@ -261,6 +345,15 @@
       <workItem from="1657478198840" duration="4023000" />
       <workItem from="1657555900920" duration="92000" />
       <workItem from="1657654785614" duration="709000" />
+      <workItem from="1658600873543" duration="6265000" />
+      <workItem from="1658611789068" duration="276000" />
+      <workItem from="1658612389988" duration="802000" />
+      <workItem from="1658778865475" duration="2825000" />
+      <workItem from="1658886342810" duration="1055000" />
+      <workItem from="1658943980034" duration="5402000" />
+      <workItem from="1659809382682" duration="11450000" />
+      <workItem from="1660004343093" duration="608000" />
+      <workItem from="1660165179177" duration="6510000" />
     </task>
     <task id="LOCAL-00001" summary="Newest file">
       <created>1657478412643</created>
@@ -283,7 +376,77 @@
       <option name="project" value="LOCAL" />
       <updated>1657654875802</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="submit newest code of leetcode">
+      <created>1658611864909</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658611864909</updated>
+    </task>
+    <task id="LOCAL-00005" summary="submit newest code of leetcode">
+      <created>1658612057832</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658612057832</updated>
+    </task>
+    <task id="LOCAL-00006" summary="submit newest code of leetcode">
+      <created>1658612939151</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658612939151</updated>
+    </task>
+    <task id="LOCAL-00007" summary="submit newest code of rows writer">
+      <created>1658886631937</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658886631937</updated>
+    </task>
+    <task id="LOCAL-00008" summary="submit newest code of leetcode">
+      <created>1658974716420</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658974716420</updated>
+    </task>
+    <task id="LOCAL-00009" summary="submit newest code of leetcode">
+      <created>1659834911830</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659834911830</updated>
+    </task>
+    <task id="LOCAL-00010" summary="submit newest code of leetcode">
+      <created>1659841880866</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659841880866</updated>
+    </task>
+    <task id="LOCAL-00011" summary="submit newest code of leetcode">
+      <created>1659842470877</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659842470877</updated>
+    </task>
+    <task id="LOCAL-00012" summary="submit newest code of leetcode">
+      <created>1660166391851</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660166391852</updated>
+    </task>
+    <task id="LOCAL-00013" summary="submit newest code of leetcode">
+      <created>1660172475073</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660172475073</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,11 +467,24 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Newest file" />
     <MESSAGE value="change pytorch" />
-    <option name="LAST_COMMIT_MESSAGE" value="change pytorch" />
+    <MESSAGE value="submit newest code of rows writer" />
+    <MESSAGE value="submit newest code of leetcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="submit newest code of leetcode" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/My_python_project$QT_Main.coverage" NAME="QT_Main Coverage Results" MODIFIED="1652990152897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TextAnalyzer/QT_test" />
+    <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_2__Converting_decimal_numbers_to_binary.coverage" NAME="Stack_practice_2. Converting decimal numbers to binary Coverage Results" MODIFIED="1660172710786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures/Stack" />
+    <SUITE FILE_PATH="coverage/My_python_project$7_Remove_duplicated_value_from_sorted_array.coverage" NAME="7.Remove duplicated value from sorted array Coverage Results" MODIFIED="1658779121339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_1__Balance_Parentheses_2__1_.coverage" NAME="Stack_practice_1. Balance Parentheses_2 (1) Coverage Results" MODIFIED="1660166714508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures/Stack" />
     <SUITE FILE_PATH="coverage/My_python_project$practice_1.coverage" NAME="practice_1 Coverage Results" MODIFIED="1657481599341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pytorch" />
+    <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_1__Balance_Parentheses_2.coverage" NAME="Stack_practice_1. Balance Parentheses_2 Coverage Results" MODIFIED="1659841760544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures" />
+    <SUITE FILE_PATH="coverage/My_python_project$Stack.coverage" NAME="Stack Coverage Results" MODIFIED="1659825834328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures" />
+    <SUITE FILE_PATH="coverage/My_python_project$5_Valid_Parentheses.coverage" NAME="5.Valid Parentheses Coverage Results" MODIFIED="1660165957486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/My_python_project$RowsWriter.coverage" NAME="RowsWriter Coverage Results" MODIFIED="1658886494738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WriteRow_tool" />
+    <SUITE FILE_PATH="coverage/My_python_project$QT_Main.coverage" NAME="QT_Main Coverage Results" MODIFIED="1652990152897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TextAnalyzer/QT_test" />
+    <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_1__Balance_Parentheses.coverage" NAME="Stack_practice_1. Balance Parentheses Coverage Results" MODIFIED="1659826588529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures" />
+    <SUITE FILE_PATH="coverage/My_python_project$6_Merge_2_sorted_list.coverage" NAME="6.Merge_2_sorted_list Coverage Results" MODIFIED="1658603826569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/My_python_project$28__Implement_strStr__.coverage" NAME="28. Implement strStr() Coverage Results" MODIFIED="1658886434899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
+    <SUITE FILE_PATH="coverage/My_python_project$test.coverage" NAME="test Coverage Results" MODIFIED="1660171989324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
   </component>
 </project>

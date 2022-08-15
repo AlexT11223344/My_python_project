@@ -9,10 +9,11 @@ import java.io.IOException;
 public class KeywordInfoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String keyword = request.getParameter("keyword");
-        System.out.println(keyword);
-
-
+        request.getSession().setAttribute("Keyword", keyword);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("Homepage.jsp");
+        dispatcher.forward(request, response);
     }
 
     @Override
