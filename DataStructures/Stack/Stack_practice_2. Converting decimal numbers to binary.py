@@ -2,10 +2,10 @@
 Given a integer, convert it to the binary number
 8-> 1000, 9-> 1001
 """
-import math
 
 from Stack import *
 stack = Stack()
+
 
 def convert(x, divide_num):
     while x > 0:
@@ -17,5 +17,6 @@ def convert(x, divide_num):
         bin_str = bin_str + str(stack.pop())
     return bin_str
 
-print(convert(100, 16))
+
+print(convert(8, 2))
 
