@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="submit newest code of leetcode">
+      <change afterPath="$PROJECT_DIR$/DataStructures/Queue/Queue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructures/Stack/Stack_practice_2. Converting decimal numbers to binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/Stack/Stack_practice_2. Converting decimal numbers to binary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/Easy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Easy/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -353,7 +353,7 @@
       <workItem from="1658943980034" duration="5402000" />
       <workItem from="1659809382682" duration="11450000" />
       <workItem from="1660004343093" duration="608000" />
-      <workItem from="1660165179177" duration="4493000" />
+      <workItem from="1660165179177" duration="6510000" />
     </task>
     <task id="LOCAL-00001" summary="Newest file">
       <created>1657478412643</created>
@@ -439,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660166391852</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="submit newest code of leetcode">
+      <created>1660172475073</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660172475073</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +473,7 @@
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_2__Converting_decimal_numbers_to_binary.coverage" NAME="Stack_practice_2. Converting decimal numbers to binary Coverage Results" MODIFIED="1660172270255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures/Stack" />
+    <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_2__Converting_decimal_numbers_to_binary.coverage" NAME="Stack_practice_2. Converting decimal numbers to binary Coverage Results" MODIFIED="1660172710786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures/Stack" />
     <SUITE FILE_PATH="coverage/My_python_project$7_Remove_duplicated_value_from_sorted_array.coverage" NAME="7.Remove duplicated value from sorted array Coverage Results" MODIFIED="1658779121339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
     <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_1__Balance_Parentheses_2__1_.coverage" NAME="Stack_practice_1. Balance Parentheses_2 (1) Coverage Results" MODIFIED="1660166714508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures/Stack" />
     <SUITE FILE_PATH="coverage/My_python_project$practice_1.coverage" NAME="practice_1 Coverage Results" MODIFIED="1657481599341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pytorch" />
