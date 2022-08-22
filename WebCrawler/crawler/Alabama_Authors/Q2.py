@@ -1,6 +1,3 @@
-'''
-    Request: From the search page to find all subpage URL
-'''
 import requests
 import re
 import csv
@@ -8,14 +5,10 @@ import os
 from fake_useragent import UserAgent
 import time
 from lxml import etree
-from lxml.html.clean import Cleaner
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 import random
 import base64
-import itertools as iter
-
-cleaner = Cleaner()
 
 
 class MainCrawler:
@@ -56,7 +49,7 @@ class MainCrawler:
                        'http://180.250.100.66:3128',
                        'http://94.154.222.95:8080', 'http://80.188.135.10:8080', 'http://83.241.46.175:8080',
                        'http://190.77.134.96:8080',
-                       'http://217.117.13.170:8080', 'http://46.97.0.186:8080', 'http://	104.40.159.62:8118',
+                       'http://217.117.13.170:8080', 'http://46.97.0.186:8080', 'http://   104.40.159.62:8118',
                        'http://80.79.127.140:8080',
                        'http://111.68.123.214:8080', 'http://112.105.11.196:8080']
 
@@ -72,15 +65,12 @@ class MainCrawler:
         return _url_resp
 
     # 异步加载
-    def post_source(self, URL, Headers, Parameters):
+    def post_source(self, URL):
         self.url = URL
-        self.headers = Headers
-        self.parameters = Parameters
         self.user_agent_random = self.user_agent.random
-        self.request_headers = {}
-        self.user_agent = {"user-agent": self.user_agent_random}
-        self.request_headers.update(self.headers)
-        self.request_headers.update(self.user_agent)
+        self.request_headers = {
+            "user-agent": self.user_agent_random
+        }
 
         # _proxiesSet = ['HTTP://60.13.42.120:9999', 'HTTP://163.204.244.207:9999', 'HTTP://113.121.39.121:9999',
         #                'HTTP://125.117.134.99:9000', 'HTTP://123.169.114.81:9999', 'HTTP://58.253.159.230:9999',
@@ -119,7 +109,7 @@ class MainCrawler:
         _session.mount('http://', _adapter)
         _session.mount('https://', _adapter)
 
-        _url_resp = _session.post(self.url, headers=self.request_headers, data=self.parameters, proxies=_proxy)
+        _url_resp = _session.post(self.url, proxies=_proxy, headers=self.request_headers)
         _url_resp.encoding = 'utf-8'
         return _url_resp
 
@@ -172,85 +162,71 @@ class MainCrawler:
         return cleantext
 
 
-url_1 = "https://www.lib.ua.edu/Alabama_Authors/?cat=3&paged=1"
 crawler = MainCrawler()
-resp = crawler.get_source(url_1)
-print("Read data successful, object:  ", resp)
+total_page = 80
+f = open("Q2.csv", mode="w", encoding='utf-8-sig', newline='')
+csv_writer = csv.writer(f)
+csv_writer.writerow(['Date', 'Time', 'Name', 'URL', 'Description', 'AddressInfo', 'StreetAddress', 'PlaceName'])
 
-'''<---------------- 写入csv文件 ---------------->'''
-if __name__ == "__main__":
-    total_page = 40
-    null_value = "#Null"
-    f = open("AL_AuthorInfo_Name.csv", mode="w", encoding='utf-8-sig', newline='')
-    csv_writer = csv.writer(f)
-    csv_writer.writerow(['Author_Name', 'Author_Biography', 'Source', 'Publications'])
+for i in range(1, total_page):
+    url = 'https://www.eventbrite.com/d/ca--palo-alto/business--events/silicon-valley/?page=' + str(i)
+    print("Get info from URL: ", url)
+    # time.sleep(2)
+    resp = crawler.get_source(url)
+    print("Read data successful, object:  ", resp)
+    # print(resp.text)
 
-    for i in range(1, total_page):
-        url = "https://www.lib.ua.edu/Alabama_Authors/?cat=3&paged=" + str(i)
-        print("Get info from URL: ", url)
-
-        time.sleep(1)
-
-        resp = crawler.get_source(url)
-
-        time.sleep(1)
-        print("URL: " + url + "  info has been retrieved  ", resp)
-
-        # xpath_author_Biography = '//*[@id="content"]/div[@class="post"]/div[@class="entry"]/p[1][contains(strong,
-        # "Biography")]/text() | //*[@id="content"]/div[@class="post"]/div[@class="entry"]/p[2][not(contains(strong,
-        # "Source"))]/text() | //*[@id="content"]/div[@class="post"]/div[@class="entry"]/p[1][not(strong)]/text()'
-        # #'//*[@id="content"]/div[@class="post"]/div[@class="entry"]/p[contains(strong,
-        # "Biography:")]/following-sibling::p[1]/text()' # '//*[@id="content"]/div[@class="post"]/div[
-        # @class="entry"]/p[1]/text()' # '//*[@id="content"]/div[@class="post"]/div[@class="entry"]/p[contains(
-        # strong, "Biography:")]/text()'
-        #
-
-        '''1. author name'''
-        xpath_author_name = '//*[@id="content"]/div[@class="post"]/h2/a/text()'
-        author_name = crawler.get_info_xpath(resp.text, xpath_author_name)
-
-        '''2. author biography'''
-        k = 0
-        print(author_name)
-        for j in range(0, len(author_name)):
-            k += 1
-            name_start = str(author_name[j])
-
-            # Regex
-            re_author_biography = re.compile(r'<a href=.*?' + name_start + '.*?</h2>.*?<div class="entry">.*?<p>.*?Biography.*?(?P<author_Biography>.*?)<strong>', re.S)
-            re_author_source = re.compile(r'<a href=.*?' + name_start + '.*?</h2>.*?<div class="entry">.*?<p>.*?Source.*?(?P<author_source>.*?)<strong>', re.S)
-            re_author_publications = re.compile(r'<a href=.*?' + name_start + '.*?</h2>.*?<div class="entry">.*?<p>.*?Publication.*?(?P<author_publications>.*?)<p class="postmetadata">', re.S)
-            re_author_editor = re.compile(r'<a href=.*?' + name_start + '.*?</h2>.*?<div class="entry">.*?<p>.*?Editor.*?(?P<author_editor>.*?)<p class="postmetadata">', re.S)
-
-            # Get information
-            Author_Biography = crawler.data_clean(crawler.get_info_re(resp.text, re_author_biography))
-            Author_Source = crawler.data_clean(crawler.get_info_re(resp.text, re_author_source))
-            Author_Publications = crawler.data_clean(crawler.get_info_re(resp.text, re_author_publications))
-
-            print(str(k) + ". " + name_start)
-            print(Author_Publications)
-            print("*******************")
-            print("                   ")
-            csv_writer.writerow([name_start, Author_Biography, Author_Source, Author_Publications])
-
-
-        '''3. Source '''
-        # re_author_source = re.compile(r'<strong>.*?Source.*?</strong>.*?(?P<author_source>.*?)<strong>Publication', re.S)
-        # author_source = crawler.get_info_re(resp.text, re_author_source)
-
-        # for j in author_name:
-        #     j = list(j)
-        #     result = ''.join(j)
-        #     csv_writer.writerow([result])
-
-        print("Scraping from page: {page_num} ----- complete".format(page_num=i))
+    xpath_title_url = '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div/section[1]/div[1]/div/ul/li/div/div/div[2]/div/div/div/article/div[1]/div/div/div[1]/a/@href'
+                      # '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div/section[1]/div[1]/div/ul/li[2]/div/div/div[2]/div/div/div/article/div[1]/div/div/div[1]/a'
+    title_url_list = crawler.get_info_xpath(resp.text, xpath_title_url)
+    for title_url in title_url_list:
+        print(title_url)
         time.sleep(2)
-        # print(author_Biography)
-        print("********************************")
-        # print("Length of author name list: {length_name}".format(length_name=len(author_name)))
-        # print("Length of Biography list: {length_Bio}".format(length_Bio=len(author_Biography)))
-    f.close()
-    print("Finished!")
-        # print(len(author_Biography))
-        # print(len(author_source))
-        # print(type(resp.text))
+        resp_sub = crawler.get_source(title_url)
+
+        xpath_date = '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div[2]/div/section[1]/div/div[1]/section[1]/div[2]/div[2]/time/p[@data-testid = "event-date"]/text()'
+        _date = crawler.data_clean(crawler.get_info_xpath(resp_sub.text, xpath_date))
+
+        xpath_time = '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div[2]/div/section[1]/div/div[1]/section[1]/div[2]/div[2]/time/p[2]/text()'
+        _time = crawler.data_clean(crawler.get_info_xpath(resp_sub.text, xpath_time))
+
+        xpath_name = '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div[2]/div/div[1]/div/div[2]/div/div[2]/h1[@class = "listing-hero-title"]/text()'
+        _name = crawler.data_clean(crawler.get_info_xpath(resp_sub.text, xpath_name))
+
+        xpath_description = '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div[2]/div/section[1]/div/div[2]/div[2]/div/div/div[@class="eds-text--left"]/p/text()'
+        _description = "".join(crawler.get_info_xpath(resp_sub.text, xpath_description))
+
+        xpath_address_info = '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div[2]/div/section[1]/div/div[1]/section[@aria-labelledby="location-heading"]/div[@class="event-detail__content"]/p[3]/text()'
+        _address_info = crawler.data_clean(crawler.get_info_xpath(resp_sub.text, xpath_address_info))
+        # if _address_info != "#Null":
+        #     _address_info = _address_info.split(",")
+        #     _address_locality = _address_info[0]
+        #     _address_region_info = _address_info[1].split(" ")
+        #     _address_region_info = [none for none in _address_region_info if none != '']
+        #     _address_region = _address_region_info[0]
+        #     _postalcode = _address_region_info[1]
+        # else:
+        #     _address_locality = "#Null"
+        #     _address_region = "#Null"
+        #     _postalcode = "#Null"
+
+        xpath_street_address = '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div[2]/div/section[1]/div/div[1]/section[@aria-labelledby="location-heading"]/div[@class="event-detail__content"]/p[2]/text()'
+        _street_address = crawler.data_clean(crawler.get_info_xpath(resp_sub.text, xpath_street_address))
+
+        xpath_place_name = '//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div[2]/div/section[1]/div/div[1]/section[@aria-labelledby="location-heading"]/div[@class="event-detail__content"]/p[1]/text()'
+        _place_name = crawler.data_clean(crawler.get_info_xpath(resp_sub.text, xpath_place_name))
+
+        print(_date)
+        print(_time)
+        print(_name)
+        print(_description)
+        print(_address_info)
+        # print(_address_locality)
+        # print(_address_region)
+        # print(_postalcode)
+        print(_street_address)
+        print(_place_name)
+        csv_writer.writerow([_date, _time, _name, title_url, _description, _address_info, _street_address, _place_name])
+print("All finished")
+f.close()
+
