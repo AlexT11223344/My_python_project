@@ -163,7 +163,7 @@ class MainCrawler:
 
 
 crawler = MainCrawler()
-total_page = 80
+total_page = 3
 f = open("Q2.csv", mode="w", encoding='utf-8-sig', newline='')
 csv_writer = csv.writer(f)
 csv_writer.writerow(['Date', 'Time', 'Name', 'URL', 'Description', 'AddressInfo', 'StreetAddress', 'PlaceName'])
