@@ -211,7 +211,7 @@ if __name__ == "__main__":
 
         '''2. author biography'''
         k = 0
-        print(type(author_name))
+        print(author_name)
         for j in range(0, len(author_name)):
             k += 1
             name_start = str(author_name[j])

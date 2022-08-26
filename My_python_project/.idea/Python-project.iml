@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$/DataStructures">
       <sourceFolder url="file://$MODULE_DIR$/DataStructures" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/WebCrawler/crawler/Alabama_Authors" />
     <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
