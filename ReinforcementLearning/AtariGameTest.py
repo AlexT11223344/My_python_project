@@ -22,20 +22,20 @@ import torchvision.transforms as T
 
 import gym
 
-# env = gym.make("LunarLander-v2", render_mode="human")
+env = gym.make("LunarLander-v2", render_mode="human")
 # print(env.action_space)
 # print(env.observation_space)
-# observation, info = env.reset(seed=42, return_info=True)
+observation, info = env.reset(seed=42, return_info=True)
 
-# observation, info = env.reset(seed=42, return_info=True)
-# for i in range(1000):
-#     action = env.action_space.sample()
-#     observation, reward, done, info = env.step(action)
-#     if done:
-#         observation, info = env.reset(return_info=True)
-# env.close()
-# mapping = {(pygame.K_LEFT,): 0, (pygame.K_RIGHT,): 1, (pygame.K_LEFT,): 0, (pygame.K_RIGHT,): 1}
-# play(gym.make('LunarLander-v2', keys_to_action=mapping))
+observation, info = env.reset(seed=42, return_info=True)
+for i in range(1000):
+    action = env.action_space.sample()
+    observation, reward, done, info = env.step(action)
+    if done:
+        observation, info = env.reset(return_info=True)
+env.close()
+mapping = {(pygame.K_LEFT,): 0, (pygame.K_RIGHT,): 1, (pygame.K_LEFT,): 0, (pygame.K_RIGHT,): 1}
+play(gym.make('LunarLander-v2', keys_to_action=mapping))
 
 
 # Process for RL to play Atari game
