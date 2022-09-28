@@ -2,6 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AlexT11223344.github.io" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/My_python_project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PhotoGraph_Index" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Python-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/text-analyzer" vcs="Git" />
   </component>
 </project>
