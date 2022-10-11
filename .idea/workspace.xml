@@ -2,14 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff851104-b97a-494d-bd98-5c27eb42e797" name="Changes" comment="submit newest code of RL">
-      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/CartPole.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/CartPole_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/MountainCar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Tutorial_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/data/mnist/mnist.pkl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/torch_nn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_1/events.out.tfevents.1662691902.LAPTOP-RABDNMIJ.11704.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_10/events.out.tfevents.1663440825.LAPTOP-RABDNMIJ.16340.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_2/events.out.tfevents.1662691959.LAPTOP-RABDNMIJ.16044.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_3/events.out.tfevents.1662691979.LAPTOP-RABDNMIJ.20072.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_4/events.out.tfevents.1662692753.LAPTOP-RABDNMIJ.14708.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_5/events.out.tfevents.1662693842.LAPTOP-RABDNMIJ.13148.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_6/events.out.tfevents.1662693864.LAPTOP-RABDNMIJ.16432.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_8/events.out.tfevents.1663438536.LAPTOP-RABDNMIJ.11072.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Logs/PPO_9/events.out.tfevents.1663440085.LAPTOP-RABDNMIJ.20064.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReinforcementLearning/Training/Saved Models/PPO_Model_Carpole.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/Daniel Deronda(1876).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/RowsWriter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/TF-IDF_NovelKeywordExtraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/blank_clean.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Adam Bede(1859).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Adam Bede(1859).txt__nltk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Brother Jacob(1864).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Daniel Deronda(1876).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Felix Holt, the Radical(1866).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Impressions of Theophrastus Such (1879).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Middlemarch(1871-72).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Romola(1863).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Scenes of Clerical Life(1858).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/Silas Marner(1861).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/The Lifted Veil(1859).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/The Mill on the Floss(1860).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/keywords_Adam Bede(1859).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/keywords_Brother Jacob(1864).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/keywords_Daniel Deronda(1876).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/keywords_Felix Holt, the Radical(1866).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/data_GENovels/keywords_Impressions of Theophrastus Such (1879).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/test_copy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_kit/text_cleaning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReinforcementLearning/AtariGameTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReinforcementLearning/AtariGameTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineLearning/PerceptronWithKernel.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning/PerceptronWithKernel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReinforcementLearning/Tutorial_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReinforcementLearning/Tutorial_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WriteRow_tool/Interview_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_kit/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WriteRow_tool/RowsWriter.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +97,7 @@
       <recent name="D:\GitHub\My_python_project\DataStructures\Stack" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Tutorial_1">
+  <component name="RunManager" selected="Python.TF-IDF_NovelKeywordExtraction">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="My_python_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,20 +131,20 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CartPole" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python-project" />
+    <configuration name="AtariGameTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="My_python_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ReinforcementLearning" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReinforcementLearning/CartPole.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReinforcementLearning/AtariGameTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CartPole_2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RowsWriter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,12 +161,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ReinforcementLearning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WriteRow_tool" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReinforcementLearning/CartPole_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WriteRow_tool/RowsWriter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +175,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CartPole_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TF-IDF_NovelKeywordExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,34 +183,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ReinforcementLearning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool_kit" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\GitHub\My_python_project\ReinforcementLearning\CartPole_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MountainCar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ReinforcementLearning" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReinforcementLearning/MountainCar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool_kit/TF-IDF_NovelKeywordExtraction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,6 +233,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="blank_clean" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Tool\Anaconda3-DataScience\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool_kit" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool_kit/blank_clean.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -328,11 +358,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TF-IDF_NovelKeywordExtraction" />
+        <item itemvalue="Python.blank_clean" />
         <item itemvalue="Python.Tutorial_1" />
-        <item itemvalue="Python.MountainCar" />
-        <item itemvalue="Python.CartPole_2 (1)" />
-        <item itemvalue="Python.CartPole_2" />
-        <item itemvalue="Python.CartPole" />
+        <item itemvalue="Python.AtariGameTest" />
+        <item itemvalue="Python.RowsWriter" />
       </list>
     </recent_temporary>
   </component>
@@ -376,7 +406,21 @@
       <workItem from="1661909191819" duration="604000" />
       <workItem from="1662314828658" duration="13879000" />
       <workItem from="1662406961941" duration="14317000" />
-      <workItem from="1662432158274" duration="743000" />
+      <workItem from="1662432158274" duration="1575000" />
+      <workItem from="1662494879794" duration="3009000" />
+      <workItem from="1662687601779" duration="8200000" />
+      <workItem from="1663101686373" duration="1978000" />
+      <workItem from="1663104132794" duration="1447000" />
+      <workItem from="1663217892535" duration="1365000" />
+      <workItem from="1663299665191" duration="876000" />
+      <workItem from="1663431635266" duration="12769000" />
+      <workItem from="1663774098450" duration="1182000" />
+      <workItem from="1663911887892" duration="722000" />
+      <workItem from="1664165249810" duration="2983000" />
+      <workItem from="1664230536853" duration="3623000" />
+      <workItem from="1664241279794" duration="4018000" />
+      <workItem from="1664296838894" duration="6097000" />
+      <workItem from="1665428945927" duration="14520000" />
     </task>
     <task id="LOCAL-00001" summary="Newest file">
       <created>1657478412643</created>
@@ -497,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662314868845</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="submit newest code of RL">
+      <created>1662433136171</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662433136171</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,9 +610,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_2__Converting_decimal_numbers_to_binary.coverage" NAME="Stack_practice_2. Converting decimal numbers to binary Coverage Results" MODIFIED="1660172710786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures/Stack" />
     <SUITE FILE_PATH="coverage/My_python_project$Interview_1.coverage" NAME="Interview_1 Coverage Results" MODIFIED="1660879100831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WriteRow_tool" />
-    <SUITE FILE_PATH="coverage/My_python_project$Tutorial_1.coverage" NAME="Tutorial_1 Coverage Results" MODIFIED="1662431813847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReinforcementLearning" />
+    <SUITE FILE_PATH="coverage/My_python_project$Tutorial_1.coverage" NAME="Tutorial_1 Coverage Results" MODIFIED="1664304222746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReinforcementLearning" />
     <SUITE FILE_PATH="coverage/My_python_project$Stack_practice_1__Balance_Parentheses_2__1_.coverage" NAME="Stack_practice_1. Balance Parentheses_2 (1) Coverage Results" MODIFIED="1660166714508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures/Stack" />
+    <SUITE FILE_PATH="coverage/My_python_project$TF_IDF_NovelKeywordExtraction.coverage" NAME="TF-IDF_NovelKeywordExtraction Coverage Results" MODIFIED="1665457829674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool_kit" />
     <SUITE FILE_PATH="coverage/My_python_project$torch_nn.coverage" NAME="torch_nn Coverage Results" MODIFIED="1662342340125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReinforcementLearning" />
+    <SUITE FILE_PATH="coverage/My_python_project$blank_clean.coverage" NAME="blank_clean Coverage Results" MODIFIED="1664345113483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool_kit" />
     <SUITE FILE_PATH="coverage/My_python_project$practice_1.coverage" NAME="practice_1 Coverage Results" MODIFIED="1657481599341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pytorch" />
     <SUITE FILE_PATH="coverage/My_python_project$CartPole_2__1_.coverage" NAME="CartPole_2 (1) Coverage Results" MODIFIED="1662412425050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReinforcementLearning" />
     <SUITE FILE_PATH="coverage/My_python_project$Q2__1_.coverage" NAME="Q2 (1) Coverage Results" MODIFIED="1661056214168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebCrawler/crawler/Alabama_Authors" />
@@ -579,7 +632,7 @@
     <SUITE FILE_PATH="coverage/My_python_project$Interview_1__1_.coverage" NAME="Interview_1 (1) Coverage Results" MODIFIED="1660966578268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WriteRow_tool" />
     <SUITE FILE_PATH="coverage/My_python_project$MountainCar.coverage" NAME="MountainCar Coverage Results" MODIFIED="1662413949268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReinforcementLearning" />
     <SUITE FILE_PATH="coverage/My_python_project$queue_practice_hotpotato.coverage" NAME="queue_practice_hotpotato Coverage Results" MODIFIED="1661221366706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataStructures/Queue" />
-    <SUITE FILE_PATH="coverage/My_python_project$RowsWriter.coverage" NAME="RowsWriter Coverage Results" MODIFIED="1658886494738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WriteRow_tool" />
+    <SUITE FILE_PATH="coverage/My_python_project$RowsWriter.coverage" NAME="RowsWriter Coverage Results" MODIFIED="1663299889572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WriteRow_tool" />
     <SUITE FILE_PATH="coverage/My_python_project$Main_Crawler_AL_Author.coverage" NAME="Main_Crawler_AL_Author Coverage Results" MODIFIED="1661056197056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebCrawler/crawler/Alabama_Authors" />
     <SUITE FILE_PATH="coverage/My_python_project$interview_question_2.coverage" NAME="interview_question_2 Coverage Results" MODIFIED="1660980319003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebCrawler/crawler/Alabama_Authors" />
     <SUITE FILE_PATH="coverage/My_python_project$6_Merge_2_sorted_list.coverage" NAME="6.Merge_2_sorted_list Coverage Results" MODIFIED="1658603826569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeetCode/Easy" />
@@ -588,5 +641,6 @@
     <SUITE FILE_PATH="coverage/My_python_project$AtariGameTest.coverage" NAME="AtariGameTest Coverage Results" MODIFIED="1662329966922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReinforcementLearning" />
     <SUITE FILE_PATH="coverage/My_python_project$Interview_question_1.coverage" NAME="Interview_question_1 Coverage Results" MODIFIED="1660876202348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WriteRow_tool" />
     <SUITE FILE_PATH="coverage/My_python_project$CartPole.coverage" NAME="CartPole Coverage Results" MODIFIED="1662349742278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReinforcementLearning" />
+    <SUITE FILE_PATH="coverage/My_python_project$interview.coverage" NAME="interview Coverage Results" MODIFIED="1663102532645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

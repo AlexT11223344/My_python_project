@@ -49,7 +49,7 @@ def vectorAdd(list1,list2):
     return Add_result
 
 class Perceptron:
-    def __init__(self,learning_rate=0.08, learning_loop=1000):
+    def __init__(self, learning_rate=0.08, learning_loop=1000):
         self.lr_rate = learning_rate                  #初始化学习率
         self.lr_loop = learning_loop                  #初始化学习次数
         self.sig_fun_value = self.sig_fun(1)        #初始化激活函数值
@@ -60,7 +60,7 @@ class Perceptron:
         self.b = 1                                 # b > 0
         self.p = 2                                 # origin to N+p dimensions, power value
         _k = (self.a + dotProduct(x,z)) ** (self.p + len(x))
-        return round(_k,7)
+        return round(_k, 7)
 
     '''Define active function'''
     def sig_fun(self,x):
