@@ -16,6 +16,7 @@ def TXTRead_Writeline(BookList):
     for i in range(0, len(BookList)):
         with open(path + r'\{}.txt'.format(BookList[i]), 'r') as f:
             lines = f.readlines()
+            print(lines)
             with open(path + r'\{}_Rows.txt'.format(BookList[i]), 'a+') as f_1:
                 _n = 0
                 for content in lines:

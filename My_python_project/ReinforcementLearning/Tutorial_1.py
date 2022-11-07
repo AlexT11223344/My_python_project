@@ -7,7 +7,7 @@ from stable_baselines3.common.callbacks import EvalCallback, StopTrainingOnRewar
 
 '''Path setting'''
 log_path = os.path.join('Training', 'Logs')
-PPO_path = os.path.join('Training', 'Saved Models', 'PPO_Model_Carpole')
+PPO_path = os.path.join('Training', 'Saved Models', 'PPO_Model_Carpole_200000')
 print(log_path)
 print(PPO_path)
 
@@ -16,11 +16,11 @@ env = gym.make('CartPole-v0')
 env = DummyVecEnv([lambda: env])
 
 '''Model training'''
-# model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=log_path)
-# model.learn(total_timesteps=100)
-# model.save(PPO_path)
-# evaluate_policy(model, env, n_eval_episodes=50, render=True)
-# env.close()
+model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=log_path)
+model.learn(total_timesteps=200000)
+model.save(PPO_path)
+evaluate_policy(model, env, n_eval_episodes=50, render=True)
+env.close()
 
 '''Model testing'''
 model = PPO.load(PPO_path, env=env)
@@ -41,5 +41,5 @@ for episode in range(1, episodes + 1):
 env.close()
 
 '''Viewing in Tensorboard'''
-training_log_path = os.path.join(log_path, 'PPO_11')
+training_log_path = os.path.join(log_path, 'PPO_4')
 print(training_log_path)

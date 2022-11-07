@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+
+    <!--  1. Core CSS of Bootstrap  -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <!--  2. Jquery document  -->
+    <script src="js/jquery.js" type="text/javascript" charset="UTF-8"></script>
+    <!--  3. Core JS of Bootstrap  -->
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
+    <!--  4. D3 package  -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!--  5. Load d3-cloud -->
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+<!--    <script src="d3.layout.cloud.js"></script>-->
+
+    <!--  6. Other JS documents  -->
+    <script type="text/javascript" src="js/file_info.js"></script>
+    <script type="text/javascript" src="js/keyword_search.js"></script>
+    <script type="text/javascript" src="js/check_box_status.js"></script>
+    <script type="text/javascript" src="server_test.js"></script>
+    <script type="text/javascript" src="js/device_check.js"></script>
+    <script type="text/javascript" src="js/NLP_function.js.js"></script>
+    <script type="text/javascript" src="js/wordcloud.js"></script>
+<!--    <script src="https://pulipulichen.github.io/blogger/posts/2016/11/r-text-mining/wordcloud2.js"></script>-->
+    <script type="text/javascript" src="js/test.js"></script>
+
+<!--    <script type="text/javascript" src="js/left_context.js"></script>-->
+<!--    <script type="text/javascript" src="js/right_context.js"></script>-->
+<!--    <script type="text/javascript" src="js/createRows.js"></script>-->
+    <script type="text/css" src="css/text_area.css"></script>
+    <script type="text/css" src="css/div_textarea.css"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+    <h1>George Eliot Archive Text Explorer </h1>
+    <div class="row--1">
+    <select id="select_novel_list" onchange="file_info(); create_wordcloud()">
+        <option value="0" disabled selected hidden>Select Text</option>
+        <option value="https://georgeeliotarchive.org/files/original/63eb6f7841561fd5f4c8e41c42b76508.txt">Adam Bede (1859)</option>
+        <option value="https://georgeeliotarchive.org/files/original/ecce6017f39d885060f364c10a266846.txt">Brother Jacob (1864)</option>
+        <option value="https://georgeeliotarchive.org/files/original/2149439c54aa729784f77413069e1f82.txt">Daniel Deronda (1876)</option>
+        <option value="https://georgeeliotarchive.org/files/original/907b3c33ba7988bf524f20d837f1dc3b.txt">Felix Holt, the Radical (1866)</option>
+        <option value="https://georgeeliotarchive.org/files/original/d828ef209fb49bf45bbb2d24f58e5b74.txt">Impressions of Theophrastus Such (1879)</option>
+        <option value="https://georgeeliotarchive.org/files/original/947f73407b901969d01aeda630f7197d.txt">Middlemarch (1871-72)</option>
+        <option value="https://georgeeliotarchive.org/files/original/3d43f4fe740957af8f44b3cc3c546634.txt">Romola (1863)</option>
+        <option value="https://georgeeliotarchive.org/files/original/bc75805af6c1c3c320ecb1a35ce6726d.txt">Scenes of Clerical Life (1858)</option>
+        <option value="https://georgeeliotarchive.org/files/original/43c0fcd54037b45ab266e76de89ad6d0.txt">Silas Marner (1861)</option>
+        <option value="https://georgeeliotarchive.org/files/original/bb4d5db1d598a65e6955cff838c9e4c4.txt">The Lifted Veil (1859)</option>
+        <option value="https://georgeeliotarchive.org/files/original/f1116bc8e477f576ff52d6dd4e6b2079.txt">The Mill on the Floss (1860)</option>
+    </select>
+<!--
+    <p id="p_novel_file_name"></p>
+    <p id="p_novel_name"></p>
+-->
+    <form name="keyword_searching" class="search1">
+<!--    <form name="keyword_searching" class="search1" action="/" method="post">-->
+
+        <input type="text" id="keyword" name="keyword" placeholder="Type the keywords">
+
+        <input type="button" id="search" value="Search" onclick="keywordsearch()">
+<!--        <input type="submit" id="search" value="Search" onclick="keywordsearch()">-->
+
+        <input type="checkbox" id="case_sensitive">
+        <div class="sensitive_word">Case Sensitive</div>
+
+        <input type="button" id="device_test" value="device" onclick="deviceType()">
+
+    </form>
+</div>
+    
+    <div class="row--2">
+      <div class="select-box--1">
+      <span>Left context words</span>
+        <select id="left_context" onchange="left_context_change()">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+      </div>
+    
+
+        <div class="select-box--2">
+        <span>Right context words</span>
+        <select id="right_context" onchange="right_context_change()">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        </div>
+    </div>
+    
+    <div id="search-result" style="display: none;">
+    <div class="row--3">
+    <p id="keyword_test"></p>
+    <p id="sensitive_value"></p>
+    <p id="leftContext_value"></p>
+    <p id="rightContext_value"></p>
+
+    <h3 id="total_text_lines"></h3>
+    <h3 id="total_word_count"></h3>
+    <p id="query_results_title"></p>
+    </div>
+    
+    
+    <div class="row--4">
+    <div id="query_results"></div>
+    <div class="row--4-1">
+    <h3 id="plain_text">Complete Text</h3>
+        <div id="novel_content" contenteditable="true" style="white-space: pre-wrap; overflow-x: auto; width: 500px; height: 2500px; padding-right: 16px"/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Create a div where the graph will take place -->
+    <div id="my_dataviz">test</div>
+
+    <script type="text/javascript" src="js/wordcloud.js"></script>
+
+
+    <!--    <div id="textcould" style="width: 200px; height: 500px; text-align: center">Cloud text of keywords</div>-->
+
+</body>
+</html>
